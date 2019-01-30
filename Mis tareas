@@ -1,0 +1,88 @@
+
+	*Actividades Lasc*
+
+
+ Hernández Irineo Laura
+ No. cuenta: 313311336
+
+ La realización de las siguientes actividades son con fines educativos y poner en practica los conocimientos adquiridos durante los cursos impartidos en laboratorio de LASC con el fin de 
+ obtener los conocimientos básicos para formar parte del antes mencionado. Las actividades a realizar fueron las siguientes:
+
+ º La realización un escaneo en la red de tu hogar no en una publica ya que esto podría infringir legalmente algunas leyes. Realizar un escaneo para identificar los ETD  que están 
+ conectados a una red. Para la realización de este ejercicio recurrí a el uso de nmap, ya que esta herramienta es más practica para el ejercicio y a la cual ya tenia previo conocimiento.
+
+ º Realización un análisis de trafico en la red y poder explorar los paquetes en movimiento a través de los equipos mientras están conectados a una red especifica. En este caso use la 
+ herramienta de tcpdump ya que es una herramienta que se puede ejecutar desde consola, y con el fin de mejorar mi manejo de una shell ocupe esta herramienta.
+
+ º Resolver la mayor cantidad posible de Capture The Flag, pequeños ejercicios de hacking. En esta actividad tome algo más de tiempo para resolver algunos ejercicios. A continuación 
+ presento los pasos que seguí para realizar dichos ejercicios:
+
+
+   orensics Warmup 1            Descomprimir un archivo .zip, obteniendo una imagen que contenía la bandera.
+
+                                [yue@b-max ~]$ unzip flag.zip
+
+   
+   Forensics Warmup 2           Abrir una imagen png, en este caso no realice nada ya que al descargarse la imagen se visualizo en mi pantalla la siguiente bandera,
+                                realmente linux no suele tener problemas con las extensiones de estos archivos.
+            
+                                 picoCTF{extensions_are_a_lie}
+
+
+    General Warmup 1            Cambiar un numero en hexadecimal a su equivalente en ASCII use una tabla que ya contenía base binaria, hexadecimal y también ASCII.
+            
+                                 picoCTF{A}
+
+            
+    General Warmup 2            Pasar un numero decimal a binario, se lo realice a mano el ejercicio.
+            
+                                picoCTF{11011}
+
+
+    General Warmup 3            Busque una tabla que contuviera ambas bases para resolver el ejercicio.
+
+                                picoCTF{61}
+
+            
+    Resources                   Este ejercicio consistía en ver el video acerca de las competencias dentro de la pagina, al pie del video estaba la bandera.
+
+                                picoCTF{xiexie_ni_lai_zheli}
+
+            
+    Reversing Warmup 1          Para este ejercicio use la shell de la pagina donde solo tuve que cambiar de directorio. luego listar los archivos y ejecutar el archivo con
+                                ./ (a partir de aquí empecé a usar más la shell de la pagina).
+            
+                                picoCTF{welc0m3_t0_r3VeRsLnG}
+
+
+    Reversing Warmup 2          En este ejercicio recurrí a un decodificador en línea con base 64.
+            
+                                picoCTF{th4t_w4s_s1mpL3}
+
+
+    Crypto Warmup 1             En este ejercicio ocupamos criptografía vigenere de esta investigue como se realizaba a mano de la manera mas simple tabulando llkjmlmpadkkc sobre 
+                                thisisalilkey, apoyándome en tabla dada para encontrar el secretmessage.
+            
+                                picoCTF{SECRETMESSAGE}
+
+
+    Crypto Warmup 2             En este ejercicio utilice un decodificador con el nombre rot13.
+            
+                                picoCTF{this_is_crypto!}
+
+
+    grep 1                      Usando la shell de la pagina y ubicándome en el directorio dado liste los archivos para encontrar file abrirlo, encontrar una gran cadena de caracteres, usando
+                                un cat y grep un archivo que llevara picoCTF como todas las banderas.
+
+                                 picoCTF{grep_and_you_will_find_cdf2e7c2}
+            
+    
+     net cat                    Ingresando a nuevamente a la shell, no sin antes revisar el uso de net cat, solo fue necesario usar nc 2018shell.picoctf.com 36356 para visualizar la bandera.
+            
+                                picoCTF{NEtcat_iS_a_NEcESSiTy_9454f3e0}
+
+   
+     strings                    Usando la shell, y cd /problems/strings_4_40d221755b4a0b134c2a7a2e825ef95f on the shell server fue similar la dinámica a la de cat y grep pero Usando strings.
+
+                                picoCTF{sTring_sAVesS_Time_d3ffa29c}
+
